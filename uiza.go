@@ -42,6 +42,9 @@ const (
 
 	// UploadsURL is the URL of the uploads service backend.
 	UploadsURL string = "https://uiza.io"
+
+	//Version SDK
+	Version string = "1.0.0"
 )
 
 //
