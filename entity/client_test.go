@@ -1,9 +1,9 @@
 package entity
 
 import (
-	"api-wrapper-go"
-	mockService "api-wrapper-go/mock"
-	_ "api-wrapper-go/testing"
+	"github.com/ngoanhtan/api-wrapper-go"
+	mockService "github.com/ngoanhtan/api-wrapper-go/mock"
+	_ "github.com/ngoanhtan/api-wrapper-go/testing"
 	"reflect"
 	"testing"
 )

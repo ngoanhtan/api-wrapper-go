@@ -1,7 +1,7 @@
 package testing
 
 import (
-	uiza "api-wrapper-go"
+	uiza "github.com/ngoanhtan/api-wrapper-go"
 )
 
 func init() {

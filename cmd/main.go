@@ -1,9 +1,9 @@
 package main
 
 import (
-	uiza "api-wrapper-go"
-	"api-wrapper-go/entity"
-	_ "api-wrapper-go/testing"
+	uiza "github.com/ngoanhtan/api-wrapper-go"
+	"github.com/ngoanhtan/api-wrapper-go/entity"
+	_ "github.com/ngoanhtan/api-wrapper-go/testing"
 	"log"
 )
 

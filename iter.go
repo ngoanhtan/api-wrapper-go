@@ -1,7 +1,7 @@
 package uiza
 
 import (
-	"api-wrapper-go/form"
+	"github.com/ngoanhtan/api-wrapper-go/form"
 	"reflect"
 )
 

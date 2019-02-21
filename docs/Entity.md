@@ -10,8 +10,8 @@ See details [here](https://docs.uiza.io/#create-entity).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/ngoanhtan/api-wrapper-go"
+    "github.com/ngoanhtan/api-wrapper-go/entity"
 )
 
 var typeHTTP = Uiza.InputTypeHTTP
@@ -33,8 +33,8 @@ See details [here](https://docs.uiza.io/#retrieve-an-entity).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/ngoanhtan/api-wrapper-go"
+    "github.com/ngoanhtan/api-wrapper-go/entity"
 )
 
 params := &Uiza.EntityRetrieveParams{ID: uiza.String("Your entity ID")}
@@ -49,8 +49,8 @@ See details [here](https://docs.uiza.io/#list-all-entities).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/ngoanhtan/api-wrapper-go"
+    "github.com/ngoanhtan/api-wrapper-go/entity"
 )
 
 params := &uiza.EntityListParams{}
@@ -65,8 +65,8 @@ See details [here](https://docs.uiza.io/#delete-an-entity).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/ngoanhtan/api-wrapper-go"
+    "github.com/ngoanhtan/api-wrapper-go/entity"
 )
 
 params := &Uiza.EntityDeleteParams{ID: uiza.String("Your entity ID")}
@@ -81,8 +81,8 @@ See details [here](https://docs.uiza.io/#search-entity).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/ngoanhtan/api-wrapper-go"
+    "github.com/ngoanhtan/api-wrapper-go/entity"
 )
 
 params := &uiza.EntitySearchParams{Keyword: uiza.String("Sample")}
@@ -99,8 +99,8 @@ See details [here](https://docs.uiza.io/#publish-entity-to-cdn).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/ngoanhtan/api-wrapper-go"
+    "github.com/ngoanhtan/api-wrapper-go/entity"
 )
 
 params := &Uiza.EntityPublishParams{ID: uiza.String("Your entity ID")}
@@ -114,8 +114,8 @@ See details [here](https://docs.uiza.io/#get-status-publish).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/ngoanhtan/api-wrapper-go"
+    "github.com/ngoanhtan/api-wrapper-go/entity"
 )
 
 params := &Uiza.EntityPublishParams{ID: uiza.String("Your entity ID")}
@@ -129,8 +129,8 @@ See details [here](https://docs.uiza.io/#get-aws-upload-key).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/ngoanhtan/api-wrapper-go"
+    "github.com/ngoanhtan/api-wrapper-go/entity"
 )
 
 response, _ := entity.GetAWSUploadKey()
