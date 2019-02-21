@@ -1,10 +1,11 @@
 package main
 
 import (
-	uiza "api-wrapper-go"
-	"api-wrapper-go/entity"
-	_ "api-wrapper-go/testing"
 	"log"
+
+	uiza "github.com/uizaio/api-wrapper-go"
+	"github.com/uizaio/api-wrapper-go/entity"
+	_ "github.com/uizaio/api-wrapper-go/testing"
 )
 
 func main() {

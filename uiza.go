@@ -2,7 +2,6 @@
 package uiza
 
 import (
-	"api-wrapper-go/form"
 	"bytes"
 	"encoding/json"
 	"errors"
@@ -20,6 +19,8 @@ import (
 	"strings"
 	"sync"
 	"time"
+
+	"github.com/uizaio/api-wrapper-go/form"
 )
 
 //

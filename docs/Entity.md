@@ -10,8 +10,8 @@ See details [here](https://docs.uiza.io/#create-entity).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/uizaio/api-wrapper-go"
+    "github.com/uizaio/api-wrapper-go/entity"
 )
 
 var typeHTTP = Uiza.InputTypeHTTP
@@ -33,8 +33,8 @@ See details [here](https://docs.uiza.io/#retrieve-an-entity).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/uizaio/api-wrapper-go"
+    "github.com/uizaio/api-wrapper-go/entity"
 )
 
 params := &Uiza.EntityRetrieveParams{ID: uiza.String("Your entity ID")}
@@ -49,8 +49,8 @@ See details [here](https://docs.uiza.io/#list-all-entities).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/uizaio/api-wrapper-go"
+    "github.com/uizaio/api-wrapper-go/entity"
 )
 
 params := &uiza.EntityListParams{}
@@ -65,8 +65,8 @@ See details [here](https://docs.uiza.io/#delete-an-entity).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/uizaio/api-wrapper-go"
+    "github.com/uizaio/api-wrapper-go/entity"
 )
 
 params := &Uiza.EntityDeleteParams{ID: uiza.String("Your entity ID")}
@@ -81,8 +81,8 @@ See details [here](https://docs.uiza.io/#search-entity).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/uizaio/api-wrapper-go"
+    "github.com/uizaio/api-wrapper-go/entity"
 )
 
 params := &uiza.EntitySearchParams{Keyword: uiza.String("Sample")}
@@ -92,15 +92,15 @@ for _, v := range listEntity {
 }
 ```
 
-
 ## Publish entity to CDN
+
 Publish entity to CDN, use for streaming
 See details [here](https://docs.uiza.io/#publish-entity-to-cdn).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/uizaio/api-wrapper-go"
+    "github.com/uizaio/api-wrapper-go/entity"
 )
 
 params := &Uiza.EntityPublishParams{ID: uiza.String("Your entity ID")}
@@ -109,13 +109,14 @@ log.Printf("%s\n", response)
 ```
 
 ## Get status publish
+
 Publish entity to CDN, use for streaming
 See details [here](https://docs.uiza.io/#get-status-publish).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/uizaio/api-wrapper-go"
+    "github.com/uizaio/api-wrapper-go/entity"
 )
 
 params := &Uiza.EntityPublishParams{ID: uiza.String("Your entity ID")}
@@ -124,13 +125,14 @@ log.Printf("%s\n", response)
 ```
 
 ## Get AWS upload key
+
 This API will be return the bucket temporary upload storage & key for upload, so that you can push your file to Uiza’s storage and get the link for URL upload & create entity
 See details [here](https://docs.uiza.io/#get-aws-upload-key).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/uizaio/api-wrapper-go"
+    "github.com/uizaio/api-wrapper-go/entity"
 )
 
 response, _ := entity.GetAWSUploadKey()
@@ -138,18 +140,20 @@ log.Printf("%s\n", response)
 ```
 
 ## Update an entity
+
 Update entity's information.
 See details [here](https://docs.uiza.io/#update-an-entity).
 
 ```golang
 import (
-    Uiza "api-wrapper-go"
-    "api-wrapper-go/entity"
+    Uiza "github.com/uizaio/api-wrapper-go"
+    "github.com/uizaio/api-wrapper-go/entity"
 )
 params := &Uiza.EntityUpdateParams{ID: uiza.String("Your entity ID")}
 response, _ := entity.Update(params)
 log.Printf("%s\n", response)
 ```
+
 Example Response
 
 ```golang
